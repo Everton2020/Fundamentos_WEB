@@ -1,0 +1,71 @@
+/*Estilos da pagina index.html*/
+.center
+{
+  text-align: center;
+}
+.justify
+{
+  text-align: justify;
+}
+.container
+{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.menu li
+{
+  display: inline;
+  padding: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.menu li a 
+{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+
+}
+
+.menu li a:hover{
+  color: grey;
+}
+.tm-social
+{
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+.mb-50
+{
+  padding-bottom: 50px;
+}
+.container2
+{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.p-30
+{
+  padding: 30px;
+}
+.br-50
+{
+  border-radius: 50%;
+}
+.wh
+{
+  width: 325px;
+  height: 340px;
+}
+.p-5
+{
+  padding: 10px;
+}
+.pic-size
+{
+  width: 500px;
+  height: 400px;
+}
+
