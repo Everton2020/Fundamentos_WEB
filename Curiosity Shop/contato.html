@@ -10,33 +10,49 @@
     <li><a href="contato.html">Contato</a></li>
     </ul>
 </head>
-<body>
+<body class="background-general">
     
     <div class = "container2">
-        <div>
+        <div class="font-family-gill">
             
     <h1 class = "center" >Sobre Mim</h1>
-    <p class="justify p-30">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    <p class="justify p-30 background-cor tamanho-fonte">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         <form class="p-30">
+            <h4><p>Entre em contato comigo</p></h4>
+             <label for="nome">Nome:</label><br>
+             <input type="text" id="nome" onkeyup='validaNome()'>
+             <div id="txtNome"></div>
+
+             <label for="email">E-mail:</label><br>
+             <input type="email" id="email" onkeyup= 'validaEmail()'>
+             <div id="txtEmail"></div>
+
+             <label for="assunto">Assunto:</label><br>
+             <textarea name="assunto" id="assunto" cols="50" rows="10" onkeyup='validaAssunto()'></textarea>
+             <div id="txtAssunto"></div>
+                <br>
+            <button onclick="enviar()">Enviar</button>
+         </form>
     </div>
-    <div>
-        <img class="br-50 wh p-30" src="./assests/img/Me.jpeg" alt="minha foto">
+    <div class = "center">
+        <img class="br-50 wh p-30" src="assests/img/Me.jpg" alt="minha foto">
+        <a href="https://github.com/Everton2020?tab=followers"><img class="tm-social" src="assests/img/github.png" alt = "foto github" id="icone" onmousemove="iconeZoom()" onmouseout="iconeNormal()"></a>
+        <a href="https://www.linkedin.com/">                   <img class="tm-social" src="assests/img/linkedin.png" alt="foto linkedin" id="icone2" onmousemove="iconeZoom2()" onmouseout="iconeNormal2()"></a>
     </div> 
     </div>
     <body>
         <footer>
-           <hr>
-           <ul class="menu li">
-               <li>
-                  <h5 class="center">Pagina:
-                  <a class="p-5" href="page1.html">1</a>
-                  <a href="page2.html">2</a>
-                  </h5>
-               </li>
-           </ul>
-       
-       </footer>
+            <hr>
+            <ul class="center menu li">
+                <li>
+                   <h5 class="center"> &copy; Todos os Direitos reservados Everton Souza Silva;
+                   </h5>
+                </li>
+            </ul>
+        </footer>
+       <script src="assests/js/script.js"></script>
        </body>
        </html>
