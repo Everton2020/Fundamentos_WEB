@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="./assests/css/style.css">
-    <ul class ="menu li">
-    <li><a href = "index.html">Home</a></li>
-    <li><a href="contato.html">Contato</a></li>
+ <ul class="menu li">
+       <li>
+        <img src="assests/img/casa.png" alt="imagem home" width="15px" height="15px">
+        <a href="index.html">Home</a> 
+    </li>
+     <li>
+        <img src="assests/img/arroba.png" alt="imagem arroba" width="15px" height="15px">
+        <a href="contato.html">Contato</a>
+    </li>
+    <li>
+        <img src="assests/img/login.png" alt="imagem logo" widht="15px" height="15px">
+       <a href="login.html">Login</a> 
+    </li>
+    <li style="padding-left: 810px;">
+        <form>
+            <img src="assests/img/lupa.png" alt="imagem lupa" width="15px" height="15px">
+            <label for="buscar"></label>
+            <input type="text" id="buscar">
+        </form>
+       </li>
     </ul>
 </head>
 <body class="background-general">
@@ -23,15 +40,15 @@
          <form class="p-30">
             <h4><p>Entre em contato comigo</p></h4>
              <label for="nome">Nome:</label><br>
-             <input type="text" id="nome" onkeyup='validaNome()'>
+             <input type="text" id="nome" onkeyup='validaNome()' placeholder="insira seu nome"> 
              <div id="txtNome"></div>
 
              <label for="email">E-mail:</label><br>
-             <input type="email" id="email" onkeyup= 'validaEmail()'>
+             <input type="email" id="email" onkeyup= 'validaEmail()'placeholder="insira seu email">
              <div id="txtEmail"></div>
 
              <label for="assunto">Assunto:</label><br>
-             <textarea name="assunto" id="assunto" cols="50" rows="10" onkeyup='validaAssunto()'></textarea>
+             <textarea name="assunto" id="assunto" cols="50" rows="10" onkeyup='validaAssunto()' placeholder="insira o assunto"></textarea>
              <div id="txtAssunto"></div>
                 <br>
             <button onclick="enviar()">Enviar</button>

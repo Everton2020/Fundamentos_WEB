@@ -80,6 +80,7 @@ function validaAssunto(){
     {
      icone.style.width = "50px"
      icone.style.height = "50px"
+   
     }
     function iconeNormal()
     {
