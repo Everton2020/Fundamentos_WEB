@@ -1,0 +1,10 @@
+.tm-social 
+{
+  width: 40px !important;
+  height: 40px !important;
+  padding: 5px !important;
+}
+.container
+{
+    display: inline;
+}
